@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f9eee9">
+<title>Ashwitha &amp; Prathish | Wedding Invitation</title>
+<style>
+  :root{--cream:#fffaf5;--blush:#f3d9d7;--rose:#a64d5b;--gold:#b28a4a;--ink:#553b3b}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+  .page{min-height:100vh;overflow:hidden;position:relative}
+  .petal{position:fixed;top:-30px;z-index:5;pointer-events:none;opacity:.7;animation:fall linear forwards;font-size:18px}
+  @keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:.1}}
+  .intro{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:28px 18px;background:radial-gradient(circle at top,#fff 0,#f9e9e6 55%,#f3d9d7 100%)}
+  .envelope-wrap{text-align:center;max-width:560px;width:100%}
+  .eyebrow{letter-spacing:.22em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--rose)}
+  .envelope{position:relative;width:min(330px,84vw);height:215px;margin:35px auto 25px;cursor:pointer;border:0;background:transparent;perspective:900px}
+  .env-back{position:absolute;inset:0;background:#e7c2bd;border-radius:4px;box-shadow:0 18px 45px #80544a26}
+  .env-front{position:absolute;inset:0;background:linear-gradient(145deg,#f0d3cd,#e5b9b7);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);border-radius:4px}
+  .env-flap{position:absolute;inset:0;background:#f7dfd9;clip-path:polygon(0 0,100% 0,50% 59%);transform-origin:top;transition:transform .8s ease;z-index:3}
+  .seal{position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:var(--rose);color:white;display:grid;place-items:center;z-index:4;font-size:23px;box-shadow:0 4px 12px #6f263833;transition:opacity .3s}
+  .letter{position:absolute;left:8%;right:8%;bottom:8%;height:80%;background:#fffaf5;padding:22px 12px;transition:transform .8s ease;z-index:2;box-shadow:0 2px 12px #80544a14}
+  .letter small{font:10px Arial,sans-serif;letter-spacing:.15em;color:var(--gold);text-transform:uppercase}
+  .letter strong{display:block;font-size:26px;font-weight:normal;color:var(--rose);margin:12px 0}
+  .envelope.open .env-flap{transform:rotateX(180deg);z-index:1}
+  .envelope.open .letter{transform:translateY(-100px)}
+  .envelope.open .seal{opacity:0}
+  .tap{font:12px Arial,sans-serif;letter-spacing:.08em;color:#866b65}
+  .invitation{display:none;padding:0 18px 65px;animation:fadeIn 1s ease}
+  .invitation.show{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .card{max-width:760px;margin:0 auto;background:#fffdf9;border:1px solid #e8d3b0;outline:1px solid #e8d3b0;outline-offset:6px;padding:clamp(25px,6vw,58px);text-align:center;position:relative}
+  .floral{font-size:30px;letter-spacing:8px;color:var(--rose);margin:0 0 15px}
+  .smallcaps{font:11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.23em;color:var(--gold)}
+  h1{font-size:clamp(38px,8vw,70px);font-weight:normal;line-height:1.05;color:var(--rose);margin:18px 0}
+  .amp{font-style:italic;font-size:.7em;color:var(--gold)}
+  .subtitle{font-size:18px;line-height:1.7;margin:18px auto;max-width:520px}
+  .main-photo{display:block;width:100%;max-width:520px;max-height:620px;object-fit:cover;object-position:center 42%;margin:30px auto;border:7px solid white;outline:1px solid #e7d3b6;box-shadow:0 12px 35px #80544a1a}
+  .details{margin:28px auto;padding:22px 10px;border-top:1px solid #e8d3b0;border-bottom:1px solid #e8d3b0;max-width:500px}
+  .date{font-size:26px;color:var(--rose);margin:8px}
+  .venue{font-size:22px;margin:8px}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:620px;margin:32px auto}
+  .gallery img{width:100%;height:clamp(190px,42vw,350px);object-fit:cover;border:5px solid white;box-shadow:0 8px 22px #80544a1a}
+  .footer{font-size:13px;line-height:1.8;color:#876c65;margin-top:30px}
+  .reopen{border:1px solid #d9b6a8;background:#fffaf5;color:var(--rose);padding:12px 18px;border-radius:30px;cursor:pointer;font:12px Arial,sans-serif;letter-spacing:.06em;margin-top:10px}
+  @media(max-width:480px){.card{padding:28px 20px}.gallery{gap:8px}.gallery img{border-width:3px}.subtitle{font-size:16px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="page">
+  <section class="intro" id="intro">
+    <div class="envelope-wrap">
+      <p class="eyebrow">Together with their families</p>
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open wedding invitation">
+        <div class="env-back"></div>
+        <div class="letter"><small>Wedding invitation</small><strong>Ashwitha <span class="amp">&amp;</span> Prathish</strong><small>Two hearts, one beautiful beginning</small></div>
+        <div class="env-front"></div><div class="env-flap"></div><div class="seal">♥</div>
+      </div>
+      <p class="tap">TAP THE ENVELOPE TO OPEN</p>
+      <p class="eyebrow" style="margin-top:28px">2 December 2026 · J L Auditorium</p>
+    </div>
+  </section>
+
+  <main class="invitation" id="invitation">
+    <div class="card">
+      <p class="floral">❀ ✿ ❀</p>
+      <p class="smallcaps">With love and joy, we invite you to celebrate</p>
+      <h1>Ashwitha<br><span class="amp">&amp;</span><br>Prathish</h1>
+      <p class="subtitle">Two hearts, two families, and one beautiful beginning.<br>Please join us as we celebrate the wedding of</p>
+      <img class="main-photo" src="assets/couple-2.jpeg" alt="Ashwitha and Prathish together">
+      <div class="details">
+        <p class="smallcaps">The wedding celebration</p>
+        <p class="date">Wednesday, 2 December 2026</p>
+        <p class="venue">J L Auditorium</p>
+      </div>
+      <p class="subtitle">Your presence will make our special day even more memorable.</p>
+      <div class="gallery">
+        <img src="assets/couple-1.jpeg" alt="Ashwitha and Prathish wedding portrait">
+        <img src="assets/couple-2.jpeg" alt="Ashwitha and Prathish smiling together">
+      </div>
+      <p class="floral">❀ ✿ ❀</p>
+      <p class="smallcaps">With love, Ashwitha &amp; Prathish</p>
+      <p class="footer">We look forward to celebrating this special beginning with you.</p>
+      <button class="reopen" id="reopen">Back to envelope</button>
+    </div>
+  </main>
+</div>
+<script>
+const envelope=document.getElementById('envelope');
+const intro=document.getElementById('intro');
+const invitation=document.getElementById('invitation');
+function openInvite(){
+  envelope.classList.add('open');
+  setTimeout(()=>{intro.style.display='none';invitation.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});},650);
+  petals();
+}
+function petals(){
+  const symbols=['✿','❀','✽'];
+  for(let i=0;i<18;i++){
+    const p=document.createElement('span');p.className='petal';p.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    p.style.left=Math.random()*100+'vw';p.style.animationDuration=(5+Math.random()*5)+'s';p.style.animationDelay=(Math.random()*1.2)+'s';p.style.fontSize=(13+Math.random()*13)+'px';
+    document.body.appendChild(p);setTimeout(()=>p.remove(),11000);
+  }
+}
+envelope.addEventListener('click',openInvite);
+envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvite();}});
+document.getElementById('reopen').addEventListener('click',()=>{invitation.classList.remove('show');intro.style.display='flex';envelope.classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
