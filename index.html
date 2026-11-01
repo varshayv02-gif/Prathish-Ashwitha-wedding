@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Prathish U R &amp; Ashwitha — Wedding Invitation</title>
+<meta name="description" content="Join us for the wedding of Prathish and Ashwitha on 2 december 2026 at J L Auditorium, Vittal.">
+<link rel="canonical" href="https://dirajashwitha.github.io/Invitation/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prathish &amp; Ashwitha Wedding Invitation">
+<meta property="og:title" content="Prathish &amp; Ashwitha — Wedding Invitation">
+<meta property="og:description" content="Join us on 2 december 2026 at 9:08AM at J L Auditorium, Vittal.">
+<meta property="og:url" content="https://dirajashwitha.github.io/Invitation/">
+<meta property="og:image" content="https://dirajashwitha.github.io/Invitation/og-preview.jpg">
+<meta property="og:image:secure_url" content="https://dirajashwitha.github.io/Invitation/og-preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="prathish and Ashwitha wedding invitation preview">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prathish U R &amp; Ashwitha — Wedding Invitation">
+<meta name="twitter:description" content="Join us on 2 december 2026 at 9:08AM at J L Auditorium, Vittal.">
+<meta name="twitter:image" content="https://dirajashwitha.github.io/Invitation/og-preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF3E7;
+    --cream-2:#F7EADA;
+    --maroon:#7A1E2E;
+    --maroon-dark:#5C1522;
+    --gold:#C6A15B;
+    --gold-light:#E4CE9C;
+    --ink:#2B1B14;
+    --blush:#F1DFC9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Cormorant Garamond', serif;
+    font-size:19px;
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .page{
+    max-width:560px;
+    margin:0 auto;
+    background:var(--cream);
+    min-height:100vh;
+    position:relative;
+    box-shadow:0 0 60px rgba(0,0,0,0.08);
+  }
+  h1,h2,h3{font-family:'Playfair Display', serif; font-weight:600;}
+  .script{font-family:'Mrs Saint Delafield', cursive; font-weight:400;}
+  .eyebrow{
+    font-size:0.78rem;
+    letter-spacing:0.28em;
+    color:var(--gold);
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    text-transform:uppercase;
+  }
+  .hairline{
+    width:56px;height:1px;background:var(--gold);
+    margin:18px auto;
+    position:relative;
+  }
+  .hairline::before{
+    content:"❁";
+    position:absolute;left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    background:var(--cream);
+    color:var(--gold);
+    font-size:14px;
+    padding:0 8px;
+  }
+  /* corner ornament */
+  .corner-frame{
+    position:absolute; inset:14px;
+    border:1px solid var(--gold);
+    pointer-events:none;
+    z-index:0;
+  }
+  .corner-frame::before,.corner-frame::after,
+  .corner-frame .c3,.corner-frame .c4{
+    content:"";
+    position:absolute;
+    width:34px;height:34px;
+    border:1px solid var(--gold);
+  }
+  .corner-frame::before{top:-1px;left:-1px;border-right:none;border-bottom:none;}
+  .corner-frame::after{top:-1px;right:-1px;border-left:none;border-bottom:none;}
+  .corner-frame .c3{bottom:-1px;left:-1px;border-right:none;border-top:none;}
+  .corner-frame .c4{bottom:-1px;right:-1px;border-left:none;border-top:none;}
+
+  /* ---------- SPLASH ---------- */
+  #splash{
+    position:fixed; inset:0; z-index:999;
+    max-width:560px; margin:0 auto;
+    background:var(--maroon);
+    background-image:radial-gradient(circle at 50% 20%, #8a2436 0%, var(--maroon) 55%, var(--maroon-dark) 100%);
+    display:flex; align-items:center; justify-content:center;
+    transition:transform 0.9s cubic-bezier(.65,0,.35,1), opacity 0.9s ease;
+  }
+  #invitationStarted{ position:absolute; opacity:0; pointer-events:none; }
+  #splash.hide,
+  #invitationStarted:checked + #splash{
+    transform:translateY(-100%); opacity:0; pointer-events:none; visibility:hidden;
+  }
+  #splash .frame{ position:absolute; inset:16px; border:1px solid rgba(230,201,140,0.55); pointer-events:none; }
+  #splash .content{
+    position:relative; z-index:1; width:100%; max-width:520px;
+    text-align:center; color:var(--cream);
+    padding:11vh 32px 0;
+  }
+  #splash .eyebrow2{ color:var(--gold-light); letter-spacing:0.32em; font-size:0.75rem; text-transform:uppercase; }
+  #splash .names{
+    display:flex; align-items:center; justify-content:center; gap:12px;
+    font-size:3.25rem; line-height:1.1; margin:18px 0 6px;
+    color:var(--gold-light); white-space:nowrap;
+  }
+  #splash .name-groom{ font-family:'Cormorant Garamond', serif; font-weight:600; font-style:italic; font-size:1em; letter-spacing:0.02em; text-transform: none; }
+  #splash .name-bride{ font-family:'Cormorant Garamond', serif; font-weight:600; font-style:italic; font-size:1em; letter-spacing:0.02em; }
+  #splash .amp{ font-family:'Cormorant Garamond', serif; font-size:1.6rem; opacity:0.85; margin:2px 0; }
+  #splash p.msg{ font-size:1.05rem; color:#EFDFC9; max-width:320px; margin:22px auto 30px; font-style:italic; }
+  #startBtn{
+    display:inline-flex; align-items:center; justify-content:center;
+    -webkit-appearance:none; appearance:none;
+    -webkit-tap-highlight-color:transparent;
+    touch-action:manipulation;
+    font-family:'Cormorant Garamond', serif;
+    letter-spacing:0.2em; text-transform:uppercase;
+    font-size:0.85rem; font-weight:600;
+    background:transparent; color:var(--gold-light);
+    border:1px solid var(--gold-light);
+    padding:14px 40px; cursor:pointer; border-radius:999px;
+    transition:background 0.3s, color 0.3s;
+    position:relative; z-index:5;
+  }
+  #startBtn:hover{ background:var(--gold-light); color:var(--maroon-dark); }
+  #startBtn:active{ background:var(--gold-light); color:var(--maroon-dark); }
+
+  /* ---------- HERO ---------- */
+  #hero{ position:relative; min-height:100vh; overflow:hidden; }
+  #hero img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+  #hero .overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(43,24,17,0.15) 0%, rgba(43,24,17,0.35) 55%, rgba(43,24,17,0.88) 100%);
+  }
+  #hero .hero-content{
+    position:relative; z-index:3;
+    min-height:100vh;
+    display:flex; flex-direction:column; justify-content:flex-start;
+    align-items:center; text-align:center;
+    padding:clamp(52px, 9vh, 92px) 30px 40px;
+    color:var(--cream);
+  }
+  #hero .eyebrow{ color:#F4C7CF; font-weight:600; }
+  #hero .couple-names{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.1rem; line-height:1.15; font-weight:600; font-style:italic; letter-spacing:0.02em;
+    color:#fff; margin:14px 0 6px;
+  }
+  #hero .amp{ display:block; font-size:1.5rem; color:var(--gold-light); margin:2px 0; }
+  #hero .date-line{
+    margin-top:20px; font-family:'Playfair Display',serif;
+    letter-spacing:0.15em; font-size:1rem; color:#F4C7CF; font-weight:600;
+  }
+  #hero .venue-line{ margin-top:6px; font-size:1rem; color:#F4C7CF; font-weight:600; }
+
+  /* ---------- SECTION GENERIC ---------- */
+  section{ position:relative; padding:70px 32px; text-align:center; }
+  section.on-blush{ background:var(--blush); }
+  .section-head h2{ font-size:2rem; color:var(--maroon); margin-top:4px; }
+
+  /* ---------- ABOUT US ---------- */
+  .couple-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:28px;
+    margin-top:44px; align-items:start;
+  }
+  .couple-card{ min-width:0; }
+  .couple-card.groom{ text-align:left; }
+  .couple-card.bride{ text-align:right; }
+  .couple-card .intro{
+    margin-top:10px; color:#6f5948; font-size:1rem; line-height:1.55;
+  }
+  .couple-card .photo-wrap{
+    width:168px; height:168px; margin:0 auto 20px;
+    border-radius:50%;
+    padding:6px;
+    border:1px solid var(--gold);
+    position:relative;
+  }
+  .couple-card .photo-wrap::after{
+    content:""; position:absolute; inset:-9px; border:1px solid var(--gold-light); border-radius:50%;
+  }
+  .couple-card img{ width:100%; height:100%; object-fit:cover; border-radius:50%; display:block; }
+  .couple-card h3{ font-size:1.7rem; color:var(--maroon); margin-bottom:6px; }
+  .couple-card .tags{ font-size:0.92rem; color:#8a6a4d; letter-spacing:0.02em; }
+  .couple-card .role{ font-size:0.78rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+
+
+  .couple-feature{
+    position:relative; margin:38px auto 42px; padding:9px;
+    max-width:350px; background:linear-gradient(145deg,#f5e5cf,#d6ad62,#fff5e7,#b88635);
+    box-shadow:0 14px 34px rgba(92,18,39,.18);
+  }
+  .couple-feature::before{
+    content:""; position:absolute; inset:-9px; border:1px solid var(--gold);
+    pointer-events:none;
+  }
+  .couple-feature::after{
+    content:"✦"; position:absolute; left:50%; bottom:-22px; transform:translateX(-50%);
+    width:38px; height:38px; display:grid; place-items:center;
+    color:var(--maroon); background:var(--blush); border:1px solid var(--gold);
+    border-radius:50%; font-size:.85rem;
+  }
+  .couple-feature img{
+    display:block; width:100%; aspect-ratio:3/4; object-fit:cover;
+    object-position:center center; border:2px solid var(--cream);
+  }
+  .couple-feature .frame-corner{
+    position:absolute; width:34px; height:34px; z-index:2; pointer-events:none;
+  }
+  .couple-feature .tl{ top:15px; left:15px; border-top:2px solid var(--gold-light); border-left:2px solid var(--gold-light); }
+  .couple-feature .tr{ top:15px; right:15px; border-top:2px solid var(--gold-light); border-right:2px solid var(--gold-light); }
+  .couple-feature .bl{ bottom:15px; left:15px; border-bottom:2px solid var(--gold-light); border-left:2px solid var(--gold-light); }
+  .couple-feature .br{ bottom:15px; right:15px; border-bottom:2px solid var(--gold-light); border-right:2px solid var(--gold-light); }
+
+  /* ---------- EVENT ---------- */
+  #event{ background:var(--maroon); color:var(--cream); }
+  #event .eyebrow{ color:var(--gold-light); }
+  #event .section-head h2{ color:#fff; }
+  .event-card{
+    margin-top:40px; border:1px solid rgba(230,201,140,0.5);
+    padding:38px 26px; position:relative;
+  }
+  .event-card .date-big{ font-family:'Playfair Display',serif; font-size:3.4rem; color:var(--gold-light); line-height:1; }
+  .event-card .day-name{ letter-spacing:0.3em; text-transform:uppercase; font-size:0.85rem; color:#EFE2CE; margin-top:10px; }
+  .event-card .month-year{ font-size:1.1rem; color:#EFE2CE; margin-top:2px; }
+  .event-card .divider{ width:40px; height:1px; background:var(--gold); margin:22px auto; }
+  .event-card .venue-name{ font-family:'Playfair Display',serif; font-size:1.4rem; color:#fff; }
+  .event-card .venue-addr{ margin-top:6px; color:#E7D9C2; font-size:1rem; }
+  .event-card .time-line{ margin-top:14px; color:var(--gold-light); font-size:1rem; letter-spacing:0.05em; }
+
+  /* ---------- THANK YOU ---------- */
+  #thankyou{ background:var(--maroon-dark); color:var(--cream); padding-bottom:80px; }
+  #thankyou .eyebrow{ color:var(--gold-light); }
+  #thankyou .section-head h2{ color:#fff; font-family:'Mrs Saint Delafield', cursive; font-size:2.8rem; font-weight:400; }
+  #thankyou .msg{ max-width:380px; margin:22px auto 0; color:#EDE0CB; font-size:1.08rem; font-style:italic; }
+
+  .calendar-wrap{
+    margin:44px auto 0; max-width:340px;
+    border:1px solid rgba(230,201,140,0.45);
+    padding:26px 20px 22px;
+  }
+  .cal-month{ font-family:'Playfair Display',serif; font-size:1.15rem; letter-spacing:0.1em; color:var(--gold-light); margin-bottom:16px; }
+  .cal-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:6px 4px; }
+  .cal-grid .dow{ font-size:0.7rem; letter-spacing:0.08em; color:#B99A6E; text-transform:uppercase; padding-bottom:6px; }
+  .cal-grid .day{ font-size:0.92rem; color:#EDE0CB; padding:6px 0; position:relative; }
+  .cal-grid .day.blank{ visibility:hidden; }
+  .cal-grid .day.marked{
+    color:#fff; font-weight:600;
+  }
+  .cal-grid .day.marked .heart-badge{
+    position:absolute; inset:2px 4px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--maroon); border:1px solid var(--gold-light); border-radius:50%;
+  }
+  .cal-grid .day.marked .heart-badge svg{ width:15px; height:15px; }
+
+  .cal-buttons{ margin-top:26px; display:flex; flex-direction:column; gap:12px; }
+  .cal-btn{
+    display:flex; align-items:center; justify-content:center; gap:9px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:0.95rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:600;
+    padding:13px 18px; border-radius:999px; cursor:pointer;
+    text-decoration:none; transition:opacity 0.25s;
+    border:1px solid var(--gold-light);
+  }
+  .cal-btn:active{ opacity:0.7; }
+  .cal-btn.primary{ background:var(--gold-light); color:var(--maroon-dark); border-color:var(--gold-light); }
+  .cal-btn.outline{ background:transparent; color:var(--gold-light); }
+  .cal-btn svg{ width:17px; height:17px; flex-shrink:0; }
+
+  #thankyou .closing{ margin-top:46px; font-family:'Mrs Saint Delafield', cursive; font-size:1.6rem; color:var(--gold-light); }
+  #thankyou .signature{ margin-top:4px; font-size:1rem; color:#EDE0CB; letter-spacing:0.06em; }
+
+  [data-aos]{ opacity:1; transform:none; }
+
+  @media (max-width:380px){
+    body{ font-size:17.5px; }
+    #hero .couple-names{ font-size:2.6rem; }
+    #splash .names{ font-size:2.65rem; gap:8px; }
+    #splash .content{ padding-left:22px; padding-right:22px; }
+    .event-card .date-big{ font-size:2.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="invitationStarted" aria-hidden="true">
+<div id="splash">
+  <div class="frame"></div>
+  <div class="content">
+    <div class="eyebrow2">You are invited to the wedding of</div>
+    <div class="names">
+      <span class="name-groom">Prathish U R</span>
+      <span class="amp">&amp;</span>
+      <span class="name-bride">Ashwitha</span>
+    </div>
+    <p class="msg">Thank you for being part of our journey. Click below to open our invitation.</p>
+    <label id="startBtn" for="invitationStarted" role="button" tabindex="0">Start</label>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section id="hero" style="padding:0;">
+    <img src="assets/couple-1.jpeg" alt="Prathish and Ashwitha" style="width:100%;height:100%;object-fit:cover;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="eyebrow">We are getting married</div>
+      <h1 class="couple-names">Prathish U R<span class="amp">&amp;</span>Ashwitha</h1>
+      <div class="date-line">WEDNESDAY &nbsp;·&nbsp; 2 DECEMBER 2026</div>
+      <div class="venue-line">J L Auditorium, Vittal</div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" data-aos>
+    <div class="section-head">
+      <div class="eyebrow" style="color:var(--gold);">About Us</div>
+      <h2>Bride &amp; Groom</h2>
+    </div>
+    <div class="hairline"></div>
+
+    <div class="couple-feature" aria-label="Couple photograph">
+      <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+      <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+      <img src="assets/couple-2.jpeg" alt="Prathish and Ashwitha" style="width:100%;height:100%;object-fit:contain;">
+    </div>
+
+    <div class="couple-grid">
+      <div class="couple-card groom">
+        <div class="role">The Groom</div>
+        <h3>Prathish U R</h3>
+        <p class="intro">S/O Ravi K Bangera, Brother of Shifali & Shreyas</p>
+      </div>
+      <div class="couple-card bride">
+        <div class="role">The Bride</div>
+        <h3>Ashwitha</h3>
+        <p class="intro">D/O Sunitha, Sister of Ashwath, Akshay & Anith</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT -->
+  <section id="event" data-aos>
+    <div class="section-head">
+      <div class="eyebrow">Event Details</div>
+      <h2>Save The Date</h2>
+    </div>
+    <div class="event-card">
+      <div class="corner-frame"><span class="c3"></span><span class="c4"></span></div>
+      <div class="date-big">2</div>
+      <div class="day-name">Wednesday</div>
+      <div class="month-year">December 2026</div>
+      <div class="divider"></div>
+      <div class="venue-name">J L Auditorium</div>
+      <div class="venue-addr">Vittal</div>
+      <div class="time-line">9:08 AM</div>
+    </div>
+  </section>
+
+  <!-- THANK YOU -->
+  <section id="thankyou" data-aos>
+    <div class="section-head">
+      <div class="eyebrow">With Love</div>
+      <h2>Thank You</h2>
+    </div>
+    <p class="msg">Your presence and well wishes mean the world to us. Thank you for sharing our special day.</p>
+
+<div class="calendar-wrap">
+  <div class="cal-month">DECEMBER 2026</div>
+  <div class="cal-grid" id="calGrid">
+    <div class="dow">S</div>
+    <div class="dow">M</div>
+    <div class="dow">T</div>
+    <div class="dow">W</div>
+    <div class="dow">T</div>
+    <div class="dow">F</div>
+    <div class="dow">S</div>
+
+    <div class="day"></div>
+    <div class="day"></div>
+    <div class="day">1</div>
+
+    <div class="day marked">
+      <span class="heart-badge">
+        <svg viewBox="0 0 24 24" fill="#E8C9CE">
+          <path d="M12 21s-7.5-4.6-10-9.3C.4 8.6 2 5 5.6 5c2 0 3.5 1.1 4.4 2.6C10.9 6.1 12.4 5 14.4 5 18 5 19.6 8.6 18 11.7 15.5 16.4 12 21 12 21z"/>
+        </svg>
+      </span>
+      2
+    </div>
+
+    <div class="day">3</div>
+    <div class="day">4</div>
+    <div class="day">5</div>
+    <div class="day">6</div>
+    <div class="day">7</div>
+    <div class="day">8</div>
+    <div class="day">9</div>
+    <div class="day">10</div>
+    <div class="day">11</div>
+    <div class="day">12</div>
+    <div class="day">13</div>
+    <div class="day">14</div>
+    <div class="day">15</div>
+    <div class="day">16</div>
+    <div class="day">17</div>
+    <div class="day">18</div>
+    <div class="day">19</div>
+    <div class="day">20</div>
+    <div class="day">21</div>
+    <div class="day">22</div>
+    <div class="day">23</div>
+    <div class="day">24</div>
+    <div class="day">25</div>
+    <div class="day">26</div>
+    <div class="day">27</div>
+    <div class="day">28</div>
+    <div class="day">29</div>
+    <div class="day">30</div>
+    <div class="day">31</div>
+  </div>
+</div>
+
+<script>
+  // Optional enhancement. The checkbox + label already works when an HTML viewer blocks JavaScript.
+  (function(){
+    const splash = document.getElementById('splash');
+    const startBtn = document.getElementById('startBtn');
+    const startedControl = document.getElementById('invitationStarted');
+
+    function startInvitation(){
+      startedControl.checked = true;
+      splash.classList.add('hide');
+      window.setTimeout(function(){ splash.setAttribute('aria-hidden', 'true'); }, 900);
+    }
+
+    startBtn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        startInvitation();
+      }
+    });
+  })();
+
+  // Add to Calendar: Apple Calendar (.ics) on iOS/macOS, Google Calendar elsewhere
+  (function(){
+    const button = document.getElementById('addCalBtn');
+    const title = "prathish & Ashwitha's Wedding";
+    const details = "We're getting married! Join us as we celebrate our wedding.";
+    const location = "J L Auditorium, Vittal";
+    const googleUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+      + '&text=' + encodeURIComponent(title)
+      + '&dates=20261202T043500Z/20261202T070500Z'
+      + '&details=' + encodeURIComponent(details)
+      + '&location=' + encodeURIComponent(location);
+
+    const isApple = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)
+      && !/Android/.test(navigator.userAgent);
+
+    if(isApple){
+      button.removeAttribute('target');
+      button.addEventListener('click', function(e){
+        e.preventDefault();
+        const ics = [
+          'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Wedding Invitation//EN',
+          'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'BEGIN:VEVENT',
+          'UID:wedding-20261202-prathish-ashwitha@invitation',
+          'DTSTAMP:20260915T102500Z', 'DTSTART:20261202T043500Z',
+          'DTEND:20261202T070500Z', 'SUMMARY:' + title,
+          'DESCRIPTION:' + details, 'LOCATION:' + location,
+          'END:VEVENT', 'END:VCALENDAR'
+        ].join('\r\n');
+        const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'prathish-and-Ashwitha-Wedding.ics';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
+      });
+    } else {
+      button.href = googleUrl;
+    }
+  })();
+  // Native Apple Maps and Apple Calendar on iPhone/iPad; retain Google services on Android.
+  (function(){
+    const ua = navigator.userAgent || '';
+    const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if(!isIOS) return;
+
+    const mapButton = document.getElementById('mapBtn');
+    const calendarButton = document.getElementById('addCalBtn');
+    const address = 'J L Auditorium, Vittal';
+
+    // Use the requested shared map destination on iOS and Android.
+    mapButton.href = 'https://share.google/fOdxTKM1j4BJJHQZp';
+    mapButton.removeAttribute('target');
+
+    // Supply an iCalendar file for import by the native iOS Calendar flow.
+    calendarButton.removeAttribute('target');
+    calendarButton.onclick = function(e){
+      e.preventDefault();
+      const ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Wedding Invitation//EN',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:wedding-20261202-prathish-ashwitha@invitation',
+        'DTSTAMP:20260915T102500Z',
+        'DTSTART:20261202T043500Z',
+        'DTEND:20261202T070500Z',
+        'SUMMARY:prathish & Ashwitha\'s Wedding',
+        'DESCRIPTION:We\'re getting married! Join us as we celebrate our wedding.',
+        'LOCATION:' + address,
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+      const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+      const blobUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = 'prathish-and-Ashwitha-Wedding.ics';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(function(){ URL.revokeObjectURL(blobUrl); }, 5000);
+    };
+  })();
+
+</script>
+
+</body>
+</html>
